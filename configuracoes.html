@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Configurações | Bella Cachos</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="carregando" data-pagina="configuracoes" data-titulo="Configurações">
+    <main id="conteudo" class="page">
+        <div class="header-row">
+            <div>
+                <div class="eyebrow">Administração</div>
+                <h1>Configurações</h1>
+                <p class="muted">Conta, equipe e permissões de cada perfil.</p>
+            </div>
+            
+        </div>
+        <div class="grid two" style="grid-template-columns:1fr 1fr">
+            <div class="card"><h2>Minha conta</h2><div class="form-grid" id="conta"></div></div>
+            <div class="card"><h2>Equipe</h2><div class="list" id="equipe"></div></div>
+        </div>
+        <div class="card mt"><h2>Permissões de cada perfil</h2><div class="table-wrap" id="permissoes"></div></div>
+        <div class="card mt">
+            <h2>Dados de demonstração</h2>
+            <p class="muted" style="margin-top:0">Tudo o que você cadastra no protótipo fica só neste navegador. Use o botão abaixo para recomeçar.</p>
+            <button type="button" class="btn btn-danger" id="restaurar">Restaurar dados de demonstração</button>
+        </div>
+    </main>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/paginas.js"></script>
+</body>
+</html>

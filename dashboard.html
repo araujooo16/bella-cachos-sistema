@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Dashboard | Bella Cachos</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="carregando" data-pagina="dashboard" data-titulo="Dashboard">
+    <main id="conteudo" class="page">
+        <div class="header-row">
+            <div>
+                <div class="eyebrow">Visão geral</div>
+                <h1 id="ola">Olá!</h1>
+                <p class="muted">Resumo da Bella Cachos nos últimos 30 dias, calculado com atendimentos fictícios.</p>
+            </div>
+            
+        </div>
+        <div class="grid kpis" id="kpis"></div>
+        <div id="pendentes" class="mt"></div>
+        <div class="grid two mt">
+            <div class="card"><h2>Faturamento dos últimos 7 dias</h2><div id="grafico"></div></div>
+            <div class="card"><h2>Serviços mais realizados</h2><div id="top-servicos"></div></div>
+        </div>
+        <div class="card mt">
+            <div class="header-row" style="margin-bottom:12px"><h2 style="margin:0">Agenda de hoje</h2><a class="btn btn-soft" href="agenda.html">Ver agenda</a></div>
+            <div id="hoje"></div>
+        </div>
+    </main>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/paginas.js"></script>
+</body>
+</html>

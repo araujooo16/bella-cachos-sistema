@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Entrar | Bella Cachos</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="carregando" data-pagina="login" data-titulo="Entrar">
+    <main class="login-page">
+        <section class="login">
+            <img class="login-logo" src="img/logo-bella-cachos.png" alt="Bella Cachos — Cor e Corte">
+            <h1 class="login-titulo">Sistema de gestão</h1>
+            <p class="login-sub">Protótipo navegável · dados fictícios</p>
+
+            <form id="form-login" novalidate>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" autocomplete="username" placeholder="izabella@exemplo.com">
+                </div>
+                <div class="field">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" autocomplete="current-password" placeholder="Qualquer senha funciona no protótipo">
+                </div>
+                <p class="erro" id="erro-login" role="alert" style="margin:10px 0 0"></p>
+                <button class="btn btn-primary" type="submit">Entrar</button>
+            </form>
+
+            <p class="login-demo">Ou entre direto com um perfil de demonstração:</p>
+            <div class="demo-users">
+                <button type="button" class="demo-user" data-perfil="izabella"><b>Izabella</b><small>Administradora · acesso completo</small></button>
+                <button type="button" class="demo-user" data-perfil="recepcao"><b>Recepção</b><small>Operação · cadastro, agenda e confirmações</small></button>
+                <button type="button" class="demo-user" data-perfil="mirian"><b>Mirian</b><small>Profissional · própria agenda e histórico</small></button>
+                <button type="button" class="demo-user" data-perfil="ana"><b>Ana Silva</b><small>Cliente · seus agendamentos</small></button>
+            </div>
+            <p style="margin:22px 0 0;text-align:center"><a class="muted" href="https://araujooo16.github.io/bella-cachos/">← Voltar ao site público</a></p>
+        </section>
+    </main>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/paginas.js"></script>
+</body>
+</html>
